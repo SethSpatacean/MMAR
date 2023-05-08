@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # # Setup
 
 # In[ ]:
@@ -18,7 +15,7 @@ get_ipython().run_line_magic('load_ext', 'sql')
 server = "host.docker.internal" # IP ADDRESS OF SERVER
 db = "confirm_db" # NAME OF DATABASE
 username = "sa"
-password = "!!!!132tennis"
+password = 
 
 
 # In[6]:
@@ -99,16 +96,3 @@ print(tbl_merge_perlesion.columns)
 maxds_idx = tbl_merge_perlesion.groupby(['confirm_idc'])['lumendiameterstenosis'].transform(max) == tbl_merge_perlesion['lumendiameterstenosis']
 tbl_merge_perlesion_maxds = tbl_merge_perlesion[maxds_idx]
 tbl_merge_perlesion_maxds
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
